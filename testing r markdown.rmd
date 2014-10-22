@@ -7,13 +7,13 @@
 * Autumn
     * September, October, November
 
-```{r}
+```{r comment=NA}
 rainy <- c(3.23, 4.22, 2.40, 6.51, 3.12)
 seasonal <- mean(rainy)
 seasonal
 ```
 
-In 2014 there were five months of heavy rain. The average rainfall was: ` r seasonal `
+In 2014 there were five months of heavy rain. The average rainfall was: `r seasonal `
 
 ```{r, echo=FALSE}
 plot(rainy)

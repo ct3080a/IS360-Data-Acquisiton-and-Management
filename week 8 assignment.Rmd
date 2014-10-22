@@ -1,0 +1,24 @@
+output: html_document
+---
+# How to Loose a 30 lbs
+### and maintain a healthy lifestyle
+
+#### Please note the suggestions and numbers in this presentaion are nott factual. 
+
+* Eat less refined carbs and sugar
+      * avoid white bread
+      * avoid prepackaged foods
+      * eat more green leafy vegetables
+
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
