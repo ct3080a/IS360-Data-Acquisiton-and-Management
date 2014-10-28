@@ -1,10 +1,31 @@
 # 1. Use R to determine how many numbers from 1 to 1000 are not divisible by any of 3,7, and 11.
-num.Vec <- c(1:1000)
-sum(num.Vec %in% c(num.Vec/3), c(num.Vec/7), c(num.Vec/7))
+nums = 0
+n = 1000
+divisors = (3,7,11)
+for (i in 1:n) {
+    if (all((i %%divisors) != 0)) {
+    num = num + 1
+  }
+}
+
+r = c(1:1000)
+mat = matrix(r,3,1000, byrow = TRUE)
+
+dd = mat %% divisors != 0
+num2 = sum(colSums(dd) == 3)
+
+print (num2)
 
 # 2. Write a function that takes a vector as input and returns the number of missing values in the vector.
-icee <- c(1, NA, 7, 14)
-sum(is.na(icee))
+meltedicee = function(vec) {
+  
+  n = sum(is.na(vec))
+  return(n)
+}
+
+icee = c(1, 2, 7, 14)
+print(meltedicee(icee))
+
 
 # 3. Write a function that takes a data frame as input and returns a named vector with the number of missing values in each column of the data frame. 
 icees <- c(9, 24, 21, NA)
