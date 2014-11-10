@@ -1,0 +1,12 @@
+
+1. What country is the city of Abu Dhabi in? Show the SQL that answers this question
+SELECT
+* from city
+limit 10;
+
+2. Write a SQL query that shows all of the films with the word “Astronaut” in their description.
+
+SELECT
+
+3. Write a SQL query that lists all film titles with replacement costs between $20.00 and $24.99 (inclusive) that 
+start with the letter E, in alphabetical order by film title.
