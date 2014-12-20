@@ -1,0 +1,50 @@
+---
+output: html_document
+---
+---
+# Baron Institute Addiction Study
+## Population Sample
+
+
+*Segments studied:
+
+  -Male, White
+  -Male, Other
+  -Female, White
+  -Female, Other
+  
+*Sustances reviewed:
+
+  -Alcohol
+  -Cigarettes
+  -Marijuana
+
+```{r}
+
+library(vcdExtra)
+head(DaytonSurvey)
+
+```
+
+We took a sampling of the world population and examined thier use of specific controlled substances over the course of a month.
+
+```{r}
+
+plot(DaytonSurvey$Freq)
+
+```
+
+As the graphs above and below show - the majority of the population kept contraolled substance use below 50. This is great news because we have programs in place to handle the outliers
+
+```{r}
+hist(DaytonSurvey$Freq)
+```
+
+Here is a summary of the landscape in Dayton:
+
+```{r, echo=FALSE}
+library(psych)
+describe(DaytonSurvey)
+```
+
+As you can see from the summary of our findings, the statics on usage has drasticly fallen compared to last year. My recommendation is to maintain our programs and revisit our participants next year to determine if this is a trend. 
